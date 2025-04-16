@@ -34,6 +34,8 @@
       <img src="/images/gallery/work-ss-4.png" alt="Ava and I, learning from New York!" />
       <img src="/images/gallery/work-ss-7.png" alt="Top-down piano view during lessons." />
     </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
   </section>
 
   <!-- About Section -->
@@ -68,6 +70,34 @@
   <div data-include="/partials/footer.html"></div>
 
   <!-- JavaScript Include -->
-  <script src="/js/includes.js"></script>
+    <script src="/js/includes.js"></script>
+    <script>
+    const track = document.querySelector('.slide-track');
+    const slides = document.querySelectorAll('.gallery-carousel img');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let currentIndex = 0;
+
+    function updateSlide() {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlide();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlide();
+    });
+
+    //Optional: auto-slide every 6 seconds
+    setInterval(() => {
+      nextBtn.click();
+    }, 6000);
+  </script>
+
+
 </body>
 </html>
