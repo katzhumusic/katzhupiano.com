@@ -4,10 +4,13 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   margin-top: 2rem;
+  padding: 0 1rem;
+  justify-items: center;
 }
 
 .gallery img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
