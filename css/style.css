@@ -26,6 +26,10 @@ nav.navbar {
   color: #1f2937;
 }
 
+.center {
+  text-align: center;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
