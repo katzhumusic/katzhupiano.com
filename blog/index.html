@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog – Katzhu Piano Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', sans-serif; background-color: #fdfdfd; color: #333; }
+    nav {
+      background: #f0f4f8;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    nav .logo { font-weight: 700; font-size: 1.5rem; color: #205375; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav ul li a { text-decoration: none; color: #205375; font-weight: 600; transition: color 0.3s; }
+    nav ul li a:hover { color: #2c698d; }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .section h1 {
+      font-size: 2rem;
+      color: #205375;
+      margin-bottom: 2rem;
+    }
+    .post {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1rem;
+    }
+    .post h2 {
+      font-size: 1.4rem;
+      color: #2c698d;
+      margin-bottom: 0.5rem;
+    }
+    .post p {
+      font-size: 1.05rem;
+      color: #444;
+    }
+    .post a {
+      color: #2c698d;
+      text-decoration: none;
+    }
+    .post a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #f0f4f8;
+      text-align: center;
+      padding: 1.5rem;
+      color: #888;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Katzhu Piano</div>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Me</a></li>
+      <li><a href="../lesson-policy.html">Lesson Policy</a></li>
+      <li><a href="../faq.html">FAQs</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="index.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+    <h1>Teaching Tips, Piano Insights & More</h1>
+
+    <div class="post">
+      <h2><a href="#">How to Keep Kids Motivated in Piano Lessons</a></h2>
+      <p>Explore five key strategies I use to help students stay engaged and excited about their music journey.</p>
+    </div>
+
+    <div class="post">
+      <h2><a href="#">Top 5 Free Piano Apps for Young Beginners</a></h2>
+      <p>These apps help reinforce rhythm, note reading, and theory in a fun, game-like way for kids.</p>
+    </div>
+
+    <div class="post">
+      <h2><a href="#">When Is the Right Age to Start Piano Lessons?</a></h2>
+      <p>Is your child ready for lessons? Let’s talk about what signs to look for and how to prepare.</p>
+    </div>
+
+    <div class="post">
+      <h2><a href="#">How to Make Piano Practice Less of a Chore</a></h2>
+      <p>Tips for parents and students to turn daily practice into a rewarding and enjoyable routine.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Katzhu Piano Studio. All rights reserved.
+  </footer>
+</body>
+</html>

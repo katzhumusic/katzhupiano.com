@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katzhu Piano Studio – Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', sans-serif; background-color: #fdfdfd; color: #333; }
+    nav {
+      background: #f0f4f8;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    nav .logo { font-weight: 700; font-size: 1.5rem; color: #205375; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav ul li a { text-decoration: none; color: #205375; font-weight: 600; transition: color 0.3s; }
+    nav ul li a:hover { color: #2c698d; }
+
+    .hero {
+      background: #eaf6ff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.5rem; color: #205375; margin-bottom: 1rem; }
+    .hero p { max-width: 600px; margin: 0 auto 1.5rem; font-size: 1.1rem; }
+    .hero a {
+      padding: 0.75rem 1.5rem;
+      background: #2c698d;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #f0f4f8;
+      text-align: center;
+      padding: 1.5rem;
+      color: #888;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Katzhu Piano</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="lesson-policy.html">Lesson Policy</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Inspiring Piano Lessons for Kids & Teens</h1>
+    <p>Offering personalized and engaging music education for students aged 6–25, online or in-person.</p>
+    <a href="contact.html">Book a Free Trial</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Katzhu Piano Studio. All rights reserved.
+  </footer>
+</body>
+</html>
