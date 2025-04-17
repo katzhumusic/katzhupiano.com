@@ -139,6 +139,18 @@ nav.navbar {
   padding: 4rem 1.5rem;
 }
 
+.section-centered {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+.section-centered h1{
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
 /* === Text Highlight Section === */
 .text-highlight {
   max-width: 800px;
