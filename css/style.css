@@ -73,7 +73,8 @@ nav.navbar {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55); /* Stronger overlay for readability */
+  background: rgba(0, 0, 0, 0.4); /* Stronger overlay for readability */
+  backdrop-filter: blur(2px);
   z-index: 0;
 }
 
