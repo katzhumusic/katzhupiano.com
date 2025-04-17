@@ -1,101 +1,8 @@
-/* Katzhu Piano – Global Styles */
-/* === SWIPER GALLERY STYLING === */
-.swiper-container-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;
-  width: 100%;
-}
+/* ========================================
+   Katzhu Piano – Global Styles
+======================================== */
 
-.swiper {
-  width: 100%;
-  max-width: 720px;
-  overflow: hidden;
-  position: relative;
-}
-
-/* Slide structure */
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: auto !important;
-  padding-bottom: 2rem;
-  overflow: visible !important; /* ✅ allows caption to spill below */
-}
-
-
-/* Stack image + caption properly */
-.swiper-slide figure {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Image */
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  z-index: 1;
-  position: relative;
-}
-
-/* Caption */
-figcaption {
-  font-size: 0.95rem;
-  color: #444;
-  margin-top: 0.75rem;
-  padding: 0 1rem 1rem;
-  text-align: center;
-  font-style: italic;
-  line-height: 1.4;
-  z-index: 2;
-  position: relative;
-}
-
-/* Pagination */
-.swiper-pagination {
-  margin-top: 1rem;
-  z-index: 3;
-  position: relative;
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  opacity: 1;
-  margin: 0 6px !important;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  border-radius: 50%;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #111;
-  transform: scale(1.2);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-/* === Responsive tweaks === */
-@media (max-width: 768px) {
-  .swiper-container-wrapper {
-    width: 95%;
-  }
-
-  figcaption {
-    font-size: 0.9rem;
-  }
-}
-
-
-
+/* === Base Typography & Layout === */
 body {
   margin: 0;
   padding: 0;
@@ -105,6 +12,19 @@ body {
   line-height: 1.6;
 }
 
+h1, h2, h3 {
+  color: #1f2937;
+}
+
+.center {
+  text-align: center;
+}
+
+.highlight {
+  color: #7c61ff;
+}
+
+/* === Navbar === */
 nav.navbar {
   display: flex;
   justify-content: space-between;
@@ -121,10 +41,6 @@ nav.navbar {
   font-weight: bold;
   font-size: 1.5rem;
   color: #1f2937;
-}
-
-.center {
-  text-align: center;
 }
 
 .nav-links {
@@ -144,10 +60,7 @@ nav.navbar {
   color: #6366f1;
 }
 
-h1, h2, h3 {
-  color: #1f2937;
-}
-
+/* === Hero Section === */
 .hero {
   background: #e0e7ff;
   text-align: center;
@@ -184,9 +97,33 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-.highlight {
-  color: #7c61ff;
+/* === CTA Button === */
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
 }
+
+.cta-btn:hover {
+  background: #4f46e5;
+}
+
+/* === Section Wrapper === */
+.section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+/* === Text Highlight Section === */
 .text-highlight {
   max-width: 800px;
   margin: 4rem auto;
@@ -205,6 +142,7 @@ h1, h2, h3 {
   line-height: 1.6;
 }
 
+/* === Split Section === */
 .split-section {
   display: flex;
   align-items: center;
@@ -232,11 +170,11 @@ h1, h2, h3 {
   background: #d7f2ff;
   border-radius: 50%;
   padding: 1.5rem;
+  width: 280px;
+  height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 280px;
-  height: 280px;
   overflow: hidden;
 }
 
@@ -246,49 +184,85 @@ h1, h2, h3 {
   border-radius: 50%;
 }
 
-
-.cta-btn {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background: #6366f1;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
+/* === Swiper Gallery === */
+.swiper-container-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
 }
 
-.cta-btn:hover {
-  background: #4f46e5;
+.swiper {
+  width: 100%;
+  max-width: 720px;
+  overflow: hidden;
+  position: relative;
 }
 
-.section {
-  max-width: 800px;
-  margin: 0 auto;
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto !important;
+  padding-bottom: 2rem;
+  overflow: visible !important;
+}
+
+.swiper-slide figure {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  z-index: 1;
+  position: relative;
+}
+
+figcaption {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 0.75rem;
+  padding: 0 1rem 1rem;
   text-align: center;
-  padding: 4rem 1.5rem;
-}
-
-footer.footer {
-  background-color: #f3f4f6;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-  color: #6b7280;
-  border-top: 1px solid #d1d5db;
-}
-
-blockquote {
-  background: #fef3c7;
-  padding: 1rem 1.5rem;
-  border-left: 4px solid #fbbf24;
-  margin: 2rem auto;
   font-style: italic;
-  max-width: 700px;
+  line-height: 1.4;
+  z-index: 2;
+  position: relative;
 }
 
+.swiper-pagination {
+  margin-top: 1rem;
+  z-index: 3;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  margin: 0 6px !important;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #111;
+  transform: scale(1.2);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* === Forms & Inputs === */
 form {
   max-width: 600px;
   margin: 2rem auto;
@@ -297,7 +271,8 @@ form {
   gap: 1rem;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -317,4 +292,48 @@ button {
 
 button:hover {
   background-color: #4f46e5;
+}
+
+/* === Footer === */
+footer.footer {
+  background-color: #f3f4f6;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  border-top: 1px solid #d1d5db;
+}
+
+/* === Blockquotes === */
+blockquote {
+  background: #fef3c7;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #fbbf24;
+  margin: 2rem auto;
+  font-style: italic;
+  max-width: 700px;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 768px) {
+  .swiper-container-wrapper {
+    width: 95%;
+  }
+
+  figcaption {
+    font-size: 0.9rem;
+  }
+
+  .split-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-col h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-col p {
+    font-size: 0.95rem;
+  }
 }
