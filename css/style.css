@@ -20,13 +20,11 @@
 .swiper-slide {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
-  text-align: center;
+  align-items: center;
   height: auto !important;
-  padding-bottom: 2rem;
-  overflow: hidden; /* keeps slide boundaries clean */
-  position: relative;
+  text-align: center;
+  overflow: visible !important; /* make sure caption can be seen */
 }
 
 
@@ -40,8 +38,8 @@
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 0;
 }
+
 
 
 .swiper-slide img {
@@ -53,17 +51,17 @@
 }
 
 
+
 figcaption {
+  margin-top: 0.75rem;
+  padding: 0 1rem 1.5rem;
   font-size: 0.95rem;
   color: #444;
-  margin-top: 0.75rem;
-  padding-bottom: 1rem;
-  max-width: 90%;
   font-style: italic;
   line-height: 1.4;
   z-index: 2;
-  background: transparent;
 }
+
 
 
 .swiper-pagination {
