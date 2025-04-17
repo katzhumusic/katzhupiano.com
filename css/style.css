@@ -86,7 +86,7 @@ nav.navbar {
 }
 .hero h1,
 .hero p {
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .hero h1 {
