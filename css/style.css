@@ -67,13 +67,6 @@ figcaption {
 }
 
 
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 0;
-}
-
 /* === Top Arrows - separate from image === */
 .swiper-controls-top {
   display: flex;
