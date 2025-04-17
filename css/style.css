@@ -1,15 +1,20 @@
 /* Katzhu Piano – Global Styles */
+
+/* === Swiper Container Styling === */
 .swiper {
-  width: 80%;
+  width: 90%;
   max-width: 720px;
   aspect-ratio: 4 / 3;
   margin: 2rem auto;
-  border-radius: 12px;
+  padding: 1rem;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  background-color: #f8f8f8;
 }
 
+/* === Slide Image Styling === */
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -19,9 +24,55 @@
 .swiper-slide img {
   width: 100%;
   height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   object-fit: contain;
-  border-radius: 0;
 }
+
+/* === Optional Captions (if you use <figure>) === */
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* === Swiper Arrows Styling === */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #444;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #ffeedb;
+  color: #111;
+}
+
+/* === Swiper Pagination Dots === */
+.swiper-pagination-bullet {
+  background-color: #bbb;
+  opacity: 1;
+  transition: background-color 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #444;
+}
+
 
 
 
