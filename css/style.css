@@ -110,6 +110,10 @@ nav.navbar {
   }
 }
 
+.about-section {
+  background-color: #f9f9fb;
+  padding: 4rem 2rem;
+}
 
 /* === CTA Button === */
 .cta-btn {
@@ -135,7 +139,7 @@ nav.navbar {
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
-  padding: 4rem 1.5rem;
+  padding: 4rem 2rem;
 }
 
 .section-centered {
