@@ -3,6 +3,9 @@
 ======================================== */
 
 /* === Base Typography & Layout === */
+[data-include] {
+  display: contents;
+}
 body {
   margin: 0;
   padding: 0;
