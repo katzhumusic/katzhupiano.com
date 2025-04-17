@@ -18,10 +18,11 @@
 }
 
 .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
+  padding-bottom: 2rem; 
 }
+
 
 .swiper-slide figure {
   display: flex;
