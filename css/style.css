@@ -14,7 +14,11 @@
   height: 100%;
   object-fit: cover;
   display: block;
-}
+  aspect-ratio: 4 / 3; /* Adjust ratio as needed */
+  overflow: hidden;
+  position: relative;
+}&#8203;:contentReference[oaicite:10]{index=10}
+
 
 
 body {
