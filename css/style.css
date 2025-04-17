@@ -164,6 +164,89 @@ h1, h2, h3 {
   color: #374151;
 }
 
+.hero-banner {
+  background: url('/images/your-hero-image.webp') center/cover no-repeat;
+  padding: 6rem 1.5rem;
+  border-radius: 0 0 24px 24px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 3rem 1rem;
+  border-radius: 12px;
+}
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #00bfff;
+}
+.text-highlight {
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.text-highlight h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.text-highlight p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.split-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.text-col {
+  flex: 1;
+  min-width: 280px;
+}
+
+.image-col {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.circle-img {
+  background: #d7f2ff;
+  border-radius: 50%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+
+.circle-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+
 .cta-btn {
   display: inline-block;
   margin-top: 1.5rem;
