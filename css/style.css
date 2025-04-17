@@ -62,9 +62,9 @@ nav.navbar {
 
 /* === Hero Section === */
 .hero {
-  background: url('/images/hero-piano-1.png') center center / cover no-repeat;
+  background: url('/images/hero-piano-2.png') center center / cover no-repeat;
   position: relative;
-  padding: 6rem 1.5rem;
+  padding: 8rem 2rem;
   color: white;
   text-align: center;
 }
@@ -73,7 +73,7 @@ nav.navbar {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* dark overlay for text readability */
+  background: rgba(0, 0, 0, 0.55); /* Stronger overlay for readability */
   z-index: 0;
 }
 
@@ -82,6 +82,10 @@ nav.navbar {
   z-index: 1;
   max-width: 800px;
   margin: 0 auto;
+}
+.hero h1,
+.hero p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
