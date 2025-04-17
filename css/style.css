@@ -1,8 +1,8 @@
 /* Katzhu Piano – Global Styles */
+/* === SWIPER GALLERY STYLING === */
 .swiper-container-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 2rem 0;
   width: 100%;
 }
@@ -10,28 +10,19 @@
 .swiper {
   width: 100%;
   max-width: 720px;
-  aspect-ratio: 4 / 3;
-  border-radius: 16px;
   overflow: visible !important;
-  background: #f4f4f4;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+/* Slide structure */
 .swiper-slide {
   display: block;
   text-align: center;
-  padding-bottom: 2rem;
   height: auto !important;
   overflow: visible !important;
+  padding-bottom: 2rem;
 }
 
-
-
-.swiper-wrapper {
-  align-items: flex-start !important;
-  overflow: visible !important;
-}
-
+/* Stack image + caption properly */
 .swiper-slide figure {
   margin: 0;
   padding: 0;
@@ -40,33 +31,36 @@
   align-items: center;
 }
 
+/* Image */
 .swiper-slide img {
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 12px;
+  z-index: 1;
+  position: relative;
 }
 
+/* Caption */
 figcaption {
   font-size: 0.95rem;
-  margin-top: 0.75rem;
-  padding-bottom: 1rem;
   color: #444;
+  margin-top: 0.75rem;
+  padding: 0 1rem 1rem;
+  text-align: center;
   font-style: italic;
-  z-index: 1;
-  background: transparent;
+  line-height: 1.4;
+  z-index: 2;
+  position: relative;
 }
 
-
+/* Pagination */
 .swiper-pagination {
   margin-top: 1rem;
+  z-index: 3;
   position: relative;
-  z-index: 1;
 }
-
-
-
 
 .swiper-pagination-bullet {
   width: 12px;
@@ -85,8 +79,16 @@ figcaption {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
+/* === Responsive tweaks === */
+@media (max-width: 768px) {
+  .swiper-container-wrapper {
+    width: 95%;
+  }
 
-
+  figcaption {
+    font-size: 0.9rem;
+  }
+}
 
 
 

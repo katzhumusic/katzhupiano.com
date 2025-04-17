@@ -203,21 +203,21 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.swiper', {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    autoHeight: true, // ✅ This tells Swiper to expand height based on slide content
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoHeight: true, // ✅ ensures slide height adjusts to fit image + caption
+    });
   });
-});
-
 </script>
+
 <script src="/js/includes.js"></script>
 </body>
 </html>
