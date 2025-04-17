@@ -12,7 +12,7 @@
   max-width: 720px;
   aspect-ratio: 4 / 3;
   border-radius: 16px;
-  overflow: visible;
+  overflow: visible !important;
   background: #f4f4f4;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -20,12 +20,13 @@
 .swiper-slide {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   height: auto !important;
+  padding-bottom: 3rem; /* <-- gives room for caption + dots */
   overflow: visible !important;
-  position: relative; /* makes z-index work */
+  position: relative;
 }
+
 
 
 
@@ -55,17 +56,18 @@
 
 
 figcaption {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.85); /* Optional for visibility */
+  margin-top: 0.75rem;
+  padding-bottom: 1rem;
   font-size: 0.95rem;
   color: #444;
-  background: rgba(255, 255, 255, 0.8); /* optional for visibility */
-  padding: 0.75rem 1rem 1.5rem;
   text-align: center;
   font-style: italic;
   line-height: 1.4;
-  max-width: 90%;
-  z-index: 2;
-  position: relative;
 }
+
 
 
 
@@ -73,7 +75,9 @@ figcaption {
 .swiper-pagination {
   margin-top: 1rem;
   position: relative;
+  z-index: 1;
 }
+
 
 
 
