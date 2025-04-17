@@ -54,7 +54,13 @@
 }
 
 
+.swiper {
+  overflow: visible !important;
+}
 
+.swiper-wrapper {
+  overflow: visible !important;
+}
 
 figcaption {
   font-size: 0.95rem;
@@ -70,17 +76,6 @@ figcaption {
 }
 
 
-.swiper-slide {
-  outline: 2px solid red;
-}
-
-.swiper-slide img {
-  outline: 2px solid blue;
-}
-
-figcaption {
-  outline: 2px solid green;
-}
 
 
 .swiper-pagination {
