@@ -24,9 +24,11 @@
   justify-content: flex-start;
   text-align: center;
   height: auto !important;
-  overflow: hidden; /* important: don't use visible here */
   padding-bottom: 2rem;
+  overflow: hidden; /* keeps slide boundaries clean */
+  position: relative;
 }
+
 
 .swiper-wrapper {
   align-items: flex-start !important;
@@ -37,7 +39,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -51,15 +52,17 @@
   border-radius: 12px;
 }
 
+
 figcaption {
   font-size: 0.95rem;
   color: #444;
   margin-top: 0.75rem;
-  padding: 0 1rem 1.5rem;
-  text-align: center;
-  font-style: italic;
+  padding-bottom: 1rem;
   max-width: 90%;
+  font-style: italic;
   line-height: 1.4;
+  z-index: 2;
+  background: transparent;
 }
 
 
