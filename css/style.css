@@ -16,6 +16,32 @@
   background: #f4f4f4;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
+/* === Swiper caption formatting === */
+.swiper-slide figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+figcaption {
+  font-size: 0.95rem;
+  color: #444;
+  padding-top: 0.5rem;
+  max-width: 90%;
+  margin: 0 auto;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+
 
 /* === Slide styling stays the same === */
 .swiper-slide {
@@ -23,6 +49,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 .swiper-slide img {
   width: 100%;
