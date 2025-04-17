@@ -1,6 +1,6 @@
 /* Katzhu Piano – Global Styles */
 
-/* === New Wrapper for layout spacing === */
+/* Container for the Swiper carousel */
 .swiper-container-wrapper {
   width: 90%;
   max-width: 720px;
@@ -8,22 +8,23 @@
   text-align: center;
 }
 
-/* === Swiper itself (image container only) === */
+/* Swiper carousel styling */
 .swiper {
   aspect-ratio: 4 / 3;
   border-radius: 16px;
   overflow: hidden;
   background: #f4f4f4;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-/* === Swiper caption formatting === */
+
+/* Styling for each slide's figure */
 .swiper-slide figure {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-
+/* Caption styling */
 figcaption {
   font-size: 0.95rem;
   color: #444;
@@ -33,6 +34,18 @@ figcaption {
   font-style: italic;
   line-height: 1.4;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .swiper-container-wrapper {
+    width: 95%;
+  }
+
+  figcaption {
+    font-size: 0.9rem;
+  }
+}
+
 
 
 
