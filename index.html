@@ -169,7 +169,7 @@
   <div data-include="/partials/footer.html"></div>
 
 <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<<!-- script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   const swiper = new Swiper('.swiper', {
     loop: true,
@@ -187,7 +187,26 @@
     waitForTransition: false, // <-- THIS prevents weird queueing/jumping
     effect: 'slide', // or 'fade', 'coverflow', etc
   });
+</script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      speed: 600,
+      waitForTransition: false,
+    });
+  });
 </script>
+
 <script src="/js/includes.js"></script>
 </body>
 </html>
