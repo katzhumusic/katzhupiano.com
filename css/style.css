@@ -18,15 +18,12 @@
 }
 
 .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  text-align: center;
+  padding-bottom: 2rem;
   height: auto !important;
-  padding-bottom: 3rem; /* <-- gives room for caption + dots */
   overflow: visible !important;
-  position: relative;
 }
-
 
 
 
@@ -36,13 +33,12 @@
 }
 
 .swiper-slide figure {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
 }
-
-
 
 .swiper-slide img {
   display: block;
@@ -50,26 +46,17 @@
   height: auto;
   object-fit: cover;
   border-radius: 12px;
-  position: relative; /* make sure it doesn’t stack above text */
-  z-index: 1;
 }
-
 
 figcaption {
-  position: relative;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.85); /* Optional for visibility */
+  font-size: 0.95rem;
   margin-top: 0.75rem;
   padding-bottom: 1rem;
-  font-size: 0.95rem;
   color: #444;
-  text-align: center;
   font-style: italic;
-  line-height: 1.4;
+  z-index: 1;
+  background: transparent;
 }
-
-
-
 
 
 .swiper-pagination {
