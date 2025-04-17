@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  width: 100%;
 }
 
 .swiper {
@@ -16,20 +17,25 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .swiper-slide figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 .swiper-slide img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -37,66 +43,18 @@ figcaption {
   font-size: 0.95rem;
   color: #444;
   margin-top: 0.75rem;
-  padding: 0 1rem 1.5rem;  /* adds breathing room before dots */
+  padding-bottom: 1.5rem;
   text-align: center;
-  max-width: 90%;
   font-style: italic;
+  max-width: 90%;
   line-height: 1.4;
 }
 
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .swiper-container-wrapper {
-    width: 95%;
-  }
-
-  figcaption {
-    font-size: 0.9rem;
-  }
-}
-
-
-
-
-/* === Slide styling stays the same === */
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* === Top Arrows - separate from image === */
-.swiper-controls-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  padding: 0 1rem;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: #333;
-  font-size: 1.5rem;
-  padding: 0.25rem 0.75rem;
-  background: transparent;
-  border-radius: 4px;
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  opacity: 1;
-}
-
-/* === Pagination below the image === */
 .swiper-pagination {
-  margin-top: 0 !important;
+  margin-top: 1rem;
   position: relative;
 }
+
 
 
 .swiper-pagination-bullet {
