@@ -129,19 +129,19 @@
 <script>
   const swiper = new Swiper('.swiper', {
     loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
     autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
+      delay: 3000, // or whatever delay you like
+      disableOnInteraction: false, // keep autoplay running after clicks
+      pauseOnMouseEnter: true,
     },
-    effect: 'fade', // or 'fade', 'cube', 'flip'
+    speed: 600, // adjust animation speed in ms
+    allowTouchMove: true,
+    waitForTransition: false, // <-- THIS prevents weird queueing/jumping
+    effect: 'slide', // or 'fade', 'coverflow', etc
   });
 </script>
 <script src="/js/includes.js"></script>
