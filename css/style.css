@@ -70,6 +70,17 @@ figcaption {
 }
 
 
+.swiper-slide {
+  outline: 2px solid red;
+}
+
+.swiper-slide img {
+  outline: 2px solid blue;
+}
+
+figcaption {
+  outline: 2px solid green;
+}
 
 
 .swiper-pagination {
