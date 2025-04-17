@@ -25,30 +25,29 @@ h1, h2, h3 {
 }
 
 /* Sticky Navbar */
-navbar {
+.navbar {
   position: sticky;
   top: 0;
-  z-index: 999;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  padding: 1rem 2rem;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 0.75rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Logo styling */
+/* Logo */
 .logo {
-  font-weight: bold;
   font-size: 1.25rem;
+  font-weight: bold;
   color: #111;
 }
 
-/* Navigation links */
+/* Nav Links */
 .nav-links {
-  list-style: none;
   display: flex;
+  list-style: none;
   gap: 1.5rem;
   margin: 0;
   padding: 0;
@@ -62,21 +61,19 @@ navbar {
 }
 
 .nav-links li a:hover {
-  color: #7762ff; /* matches your CTA button */
+  color: #7762ff;
 }
 
-/* Optional: responsive stacking for smaller screens */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
   .navbar {
+    flex-direction: column;
     align-items: flex-start;
   }
-}
+
+  .nav-links {
+    flex
+
 /* === Hero Section === */
 .hero {
   background: url('/images/hero-piano-2.png') center center / cover no-repeat;
