@@ -1,18 +1,22 @@
 /* Katzhu Piano – Global Styles */
-.swiper {
-  padding-bottom: 1rem;
-}
 .swiper-container-wrapper {
-  width: 85%;
-  max-width: 680px;
-}
-.swiper-slide figure {
-  height: auto;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
 }
 
-/*.swiper-slide figure {
+.swiper {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f4f4f4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.swiper-slide figure {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +24,7 @@
   margin: 0;
   padding: 0;
   height: 100%;
-}*/
+}
 
 .swiper-slide img {
   display: block;
