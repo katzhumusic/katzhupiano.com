@@ -135,7 +135,7 @@ nav.navbar {
 .section {
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   padding: 4rem 1.5rem;
 }
 
