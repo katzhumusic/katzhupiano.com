@@ -62,10 +62,26 @@ nav.navbar {
 
 /* === Hero Section === */
 .hero {
-  background: #e0e7ff;
+  background: url('/images/hero-piano.webp') center center / cover no-repeat;
+  padding: 6rem 2rem;
   text-align: center;
-  padding: 4rem 2rem;
+  color: white;
+  position: relative;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Overlay for readability */
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
 
 .hero h1 {
   font-size: 2.5rem;
