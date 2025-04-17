@@ -1,39 +1,32 @@
 /* Katzhu Piano – Global Styles */
 
-/* Container for the Swiper carousel */
-.swiper-container-wrapper {
-  width: 90%;
-  max-width: 720px;
-  margin: 2rem auto;
-  text-align: center;
-}
-
-/* Swiper carousel styling */
-.swiper {
-  aspect-ratio: 4 / 3;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #f4f4f4;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-/* Styling for each slide's figure */
 .swiper-slide figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
-/* Caption styling */
+.swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 figcaption {
   font-size: 0.95rem;
   color: #444;
-  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
   max-width: 90%;
-  margin: 0 auto;
   font-style: italic;
   line-height: 1.4;
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
