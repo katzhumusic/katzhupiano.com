@@ -12,19 +12,23 @@
   max-width: 720px;
   aspect-ratio: 4 / 3;
   border-radius: 16px;
-  overflow: hidden;
+  overflow: visible !important;
   background: #f4f4f4;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .swiper-slide {
   display: block;
-  text-align: center;
   padding-bottom: 2rem;
+  text-align: center;
   height: auto !important;
-  overflow: visible;
+  overflow: visible !important;
+  position: relative; /* makes sure z-index works */
 }
-
+.swiper-wrapper {
+  align-items: flex-start !important;
+  overflow: visible !important;
+}
 
 .swiper-slide figure {
   display: flex;
@@ -44,7 +48,7 @@
 
 figcaption {
   font-size: 0.95rem;
-  color: #444; /* or #333 or any darker tone */
+  color: #444;
   margin-top: 0.75rem;
   padding: 0 1rem 1.5rem;
   text-align: center;
