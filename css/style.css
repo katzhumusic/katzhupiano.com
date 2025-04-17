@@ -21,6 +21,8 @@
   display: block;
   text-align: center;
   padding-bottom: 2rem;
+  height: auto !important;
+  overflow: visible;
 }
 
 
