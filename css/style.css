@@ -11,9 +11,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 100%;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .swiper-slide img {
@@ -25,15 +25,13 @@
 
 figcaption {
   font-size: 0.95rem;
-  color: #555;
-  margin-top: 0.5rem;
+  color: #444;
+  margin-top: 0.75rem;
+  padding: 0 1rem 1.5rem;  /* adds breathing room before dots */
   text-align: center;
   max-width: 90%;
   font-style: italic;
-  font-weight: 400;
   line-height: 1.4;
-  margin-top: 0.75rem;
-  padding-bottom: 1rem;
 }
 
 
@@ -93,8 +91,10 @@ figcaption {
 
 /* === Pagination below the image === */
 .swiper-pagination {
-  margin-top: 1rem;
+  margin-top: 0 !important;
+  position: relative;
 }
+
 
 .swiper-pagination-bullet {
   width: 12px;
