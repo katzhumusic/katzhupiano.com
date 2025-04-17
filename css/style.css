@@ -54,14 +54,6 @@
 }
 
 
-.swiper {
-  overflow: visible !important;
-}
-
-.swiper-wrapper {
-  overflow: visible !important;
-}
-
 figcaption {
   font-size: 0.95rem;
   color: #444;
