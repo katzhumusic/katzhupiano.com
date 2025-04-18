@@ -32,7 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
   includeHTML(() => {
     // When all includes are finished, load the navbar scroll animation script
     const script = document.createElement('script');
-    script.src = '/js/navbar-animation.js';
+    ['navbar-animation.js', 'hamburger.js'].forEach(file => {
+      const script = document.createElement('script');
+      script.src = '/js/' + file;
+      document.body.appendChild(script);
+    });
     document.body.appendChild(script);
   });
 });
